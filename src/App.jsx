@@ -1,10 +1,11 @@
 import React from 'react'
-import Navbar from './Ui/Navbar'
+import Header from './components/Header'
+
 
 export default function App() {
   return (
     <div className="text-3xl font-bold underline">
-    <Navbar/>
+    <Header/>
   </div>
   )
 }
