@@ -9,10 +9,10 @@ const NavLinks = ({ variant = "desktop" }) => {
     if (variant === "desktop") {
       return (
         <div className="flex gap-8 px-8 py-4 rounded-full bg-[#1d6b89] text-white font-bold uppercase text-sm shadow-md mr-30 ">
-      <NavLink to="/home" className="hover:underline">Home</NavLink>
-      <NavLink to="/about" className="hover:underline">About</NavLink>
-      <NavLink to="/services" className="hover:underline">Services</NavLink>
-      <NavLink to="/products" className="hover:underline">Products</NavLink>
+      <NavLink to="/home" className="no-underline">Home</NavLink>
+      <NavLink to="/about" className="no-underline">About</NavLink>
+      <NavLink to="/services" className="no-underline">Services</NavLink>
+      <NavLink to="/products" className="no-underline">Products</NavLink>
     </div>
       );
     }

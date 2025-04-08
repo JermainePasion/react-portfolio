@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from './Logo'
 import Nav from './Nav'
+import frontimg from '../assets/imomaine.jpg'
 
 export default function Header() {
   return (
