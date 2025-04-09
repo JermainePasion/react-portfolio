@@ -6,6 +6,7 @@ import { useState } from "react";
 
 import ImageGrid from './components/ImageGrid';
 import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 
 const Box = ({ children }) => {
   const [active, setActive] = useState(false);
@@ -68,6 +69,7 @@ export default function App() {
     <div className="flex justify-center items-center mt-20 mb-20 ">
       <ContactUs />
     </div >
+    <Footer/>
     </div>
   )
 }
