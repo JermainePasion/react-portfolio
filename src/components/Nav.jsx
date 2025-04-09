@@ -9,7 +9,7 @@ const NavLinks = ({ variant = "desktop" }) => {
     if (variant === "desktop") {
       return (
         <div className="flex gap-8 px-8 py-4 rounded-full bg-[#1d6b89] text-white font-bold uppercase text-sm shadow-md mr-30 ">
-      <NavLink to="/home" className="no-underline">Home</NavLink>
+      <NavLink to="/" className="no-underline">Home</NavLink>
       <NavLink to="/about" className="no-underline">About</NavLink>
       <NavLink to="/services" className="no-underline">Services</NavLink>
       <NavLink to="/products" className="no-underline">Products</NavLink>
@@ -20,7 +20,7 @@ const NavLinks = ({ variant = "desktop" }) => {
     // Mobile: Plain stacked
     return (
       <div className="flex flex-col items-center gap-4 text-[#1d6b89] font-bold uppercase text-sm">
-        <NavLink to="/home" className={linkClasses}>Home</NavLink>
+        <NavLink to="/" className={linkClasses}>Home</NavLink>
         <NavLink to="/about" className={linkClasses}>About</NavLink>
         <NavLink to="/services" className={linkClasses}>Services</NavLink>
         <NavLink to="/products" className={linkClasses}>Products</NavLink>
