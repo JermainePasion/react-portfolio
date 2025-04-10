@@ -31,7 +31,7 @@ export default function ContactUs() {
         );
     };
     return (
-        <div className='flex justify-center items-center mt-20 rounded-lg shadow-lg mb-50'>
+        <div className='flex justify-center items-center mt-20 rounded-lg shadow-lg mb-50 mx-4'>
           <section className="bg-white dark:bg-gray-900">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>

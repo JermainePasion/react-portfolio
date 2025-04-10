@@ -21,7 +21,7 @@ const Box = ({ children }) => {
   return (
     <div
       onClick={handleClick}
-      className={`font-Fredoka font-bold uppercase text-xl p-8 text-center rounded-lg min-h-[200px] shadow-none transition-all duration-300 cursor-pointer 
+      className={`font-Fredoka font-bold uppercase text-xl p-8 text-center rounded-lg min-h-[200px] shadow-none transition-all duration-300 cursor-pointer mx-2.5
         ${active ? "bg-white text-[#1d6b89] shadow-lg shadow-gray-400" : "bg-[#1d6b89] text-white"}
         hover:bg-white hover:text-[#1d6b89] hover:shadow-lg hover:shadow-gray-400`}>
       {children}
@@ -32,7 +32,7 @@ const Box = ({ children }) => {
 export default function Home() {
   return (
     
-    <div >
+  <div >
     <Header/>
     <div className="flex justify-center px-4 sm:px-6 md:px-8 lg:px-10">
       <div className="w-full max-w-[700px]">
@@ -51,25 +51,25 @@ export default function Home() {
           <Box><h1 className='text-2xl'>Communicative</h1><h1 className='normal-case text-xl'> We make sure to communicate with the clients in every step of the way!</h1></Box>
           <Box><h1 className='text-2xl'>Quality</h1><h1 className='normal-case text-xl'> We believe in providing quality to services to our clients because it's what they deserve!</h1></Box>
         </div>
+        
       </div>
       <div className="flex flex-col items-center tracking-widest  text-[#1d6b89] font-bold uppercase text-2xl m-10 ">
-                <h1 className=''>Our Process</h1>
+        <h1 className=''>Our Process</h1>
       </div>
       <div className="flex justify-center lg:mr-115 sm:mr-0">
         <PhotoStack />
       </div>
 
       <div className="flex flex-col items-center tracking-widest  text-[#1d6b89] font-bold uppercase text-2xl m-10 ">
-                <h1 className=''>Pricelist</h1>
+        <h1 className=''>Pricelist</h1>
       </div>
-
       <div>
-      <ImageGrid />
-    </div >
-    <div className="flex justify-center items-center mt-20 mb-20 ">
-      <ContactUs />
-    </div >
+        <ImageGrid />
+      </div >
+      <div className="flex justify-center items-center mt-20 mb-20 ">
+        <ContactUs />
+      </div >
     <Footer/>
-    </div>
+  </div>
   )
 }

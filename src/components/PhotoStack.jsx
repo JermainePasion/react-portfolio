@@ -33,7 +33,14 @@ export default function PhotoStack() {
         {photoOrder.map((photo, index) => {
           const isMobileOrSmall = window.innerWidth <= 854; // Only stack on smaller screens (up to 768px)
           const topPosition = `${index * (isMobileOrSmall ? 10 : 0)}px`; // Stack photos on mobile and center on desktop
-          const leftPosition = isMobileOrSmall ? "0" : `${index * 190}px`; // Spread on desktop, center on mobile
+
+          const leftPosition = isMobileOrSmall
+          ? "50%" // center horizontally
+          : `${index * 190}px`;
+
+          const transformStyle = isMobileOrSmall
+            ? "translateX(-50%)" // apply center correction
+            : "none";
 
           return (
             <div
@@ -46,6 +53,7 @@ export default function PhotoStack() {
               style={{
                 top: topPosition,
                 left: leftPosition, 
+                transform: transformStyle
               }}
             >
               <div className="bg-white rounded-lg overflow-hidden shadow-lg w-[250px] sm:w-[280px]">

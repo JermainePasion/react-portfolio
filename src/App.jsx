@@ -1,9 +1,9 @@
 // App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './sections/Home';
-import About from './sections/About';
-import Services from './sections/Services';
-import Products from './sections/Products';
+import Home from './screens/Home';
+import About from './screens/About';
+import Services from './screens/Services';
+import Products from './screens/Products';
 
 function App() {
   return (
