@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import photo1 from "../assets/placeholder.png";
-import photo2 from "../assets/imomaine.jpg";
+import photo1 from "../assets/PhotoStack1.png";
+import photo2 from "../assets/PhotoStack2.png";
+import photo3 from "../assets/PhotoStack3.png";
+import photo4 from "../assets/PhotoStack4.png";
 
 const photos = [
   { src: photo1},
   { src: photo2 },
-  { src: photo1 },
-  { src: photo1 },
+  { src: photo3 },
+  { src: photo4 },
 ];
 
 const rotations = ["-rotate-6", "-rotate-3", "rotate-0", "rotate-3", "rotate-6"];
