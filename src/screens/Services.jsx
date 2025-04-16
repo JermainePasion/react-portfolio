@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-import photo1 from "../assets/prices/ArtPrint.png";
-import photo2 from "../assets/prices/ButtonPin.png";
-import photo3 from "../assets/prices/PhotoCard.png";
-import photo4 from "../assets/prices/PhotoBooth.png";
+import photo1 from "../assets/Stickers.png";
+import photo2 from "../assets/Front.png";
+import photo3 from "../assets/3dPrint.png";
+import photo4 from "../assets/ArtPrints.png";
 
 
 
@@ -42,7 +42,7 @@ export default function Services() {
           <h5 className=" mb-1 text-sm text-[#1d6b89] font-medium text-center">Click for More Details</h5>
         </div>
           <img
-            src={photo3}
+            src={photo1}
             alt="Image 3"
             className={`w-full h-auto object-cover rounded-t-lg transition-all duration-300 ${isClicked ? 'scale-110' : ''}`}
           />
@@ -50,6 +50,8 @@ export default function Services() {
             className={`absolute inset-0 p-4 text-white text-center flex justify-center items-center ${isClicked ? 'opacity-100 bg-[#1d6b89]' : 'opacity-0'}`}
           >
             <ul className='items-center font-bold tracking-widest uppercase'>
+            <li className='sm:text-3xl md:text-2xl '>stickers</li>
+            <br></br>
               <li>• custom made</li>
               <li>• Kiss-cut</li>
               <li>• die-cut</li>
@@ -63,7 +65,7 @@ export default function Services() {
           className={`m-5 group flex flex-col justify-center items-center rounded-lg shadow-lg mx-4 overflow-hidden transition-all duration-300 ${isClicked ? 'bg-[#1d6b89] scale-105 shadow-xl' : ''}`}
         >
           <img
-            src={photo3}
+            src={photo2}
             alt="Image 3"
             className={`w-full h-auto object-cover rounded-t-lg transition-all duration-300 ${isClicked ? 'scale-110' : ''}`}
           />
@@ -71,6 +73,8 @@ export default function Services() {
             className={`absolute inset-0 p-4 text-white text-center flex justify-center items-center ${isClicked ? 'opacity-100 bg-[#1d6b89]' : 'opacity-0'}`}
           >
             <ul className='items-center font-bold tracking-widest uppercase'>
+            <li className='sm:text-3xl md:text-2xl '>button pins</li>
+            <br></br>
               <li>• custom made</li>
               <li>• 1.25</li>
               <li>• 1.75</li>
@@ -91,7 +95,10 @@ export default function Services() {
           <div
             className={`absolute inset-0 p-4 text-white text-center flex justify-center items-center ${isClicked ? 'opacity-100 bg-[#1d6b89]' : 'opacity-0'}`}
           >
+            
             <ul className='items-center font-bold tracking-widest uppercase'>
+            <li className='sm:text-3xl md:text-2xl '>3d printing</li>
+            <br></br>
               <li>• Keychains</li>
               <li>• Headphone CHarms</li>
               <li>• School Projects</li>
@@ -114,7 +121,7 @@ export default function Services() {
           onClick={handleClick}
         >
           <img
-            src={photo3}
+            src={photo4}
             alt="Service"
             className="rounded-md w-full object-cover "
           />

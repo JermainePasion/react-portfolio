@@ -4,6 +4,7 @@ import frontimg from '../assets/placeholder.png'
 import PhotoStack from '../components/PhotoStack';
 import { useState } from "react";
 
+import Front from '../assets/Front.png'
 import ImageGrid from '../components/ImageGrid';
 import ContactUs from '../components/ContactUs';
 import Footer from '../components/Footer';
@@ -37,7 +38,7 @@ export default function Home() {
     <div className="flex justify-center px-4 sm:px-6 md:px-8 lg:px-10">
       <div className="w-full max-w-[700px]">
         <img
-          src={frontimg} alt="front image" className="w-full h-auto"/>
+          src={Front} alt="front image" className="w-full h-auto"/>
       </div>
     </div>
       <div>

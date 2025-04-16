@@ -20,14 +20,14 @@ export default function Products() {
       expandedColor: "bg-[#1d5f80]"
     },
     {
-      title: "HAIR CLIPS",
+      title: "STICKERS",
       cover: frontimg2,
       images: [frontimg2, frontimg2, frontimg2, frontimg1, frontimg1, frontimg1],
       bgColor: "bg-[#f1f0ee]",
       expandedColor: "bg-[#1d5f80]"
     },
     {
-      title: "STICKERS",
+      title: "HAIR CLIPS",
       cover: frontimg3,
       images: [frontimg3, frontimg3, frontimg1, frontimg1, frontimg1, frontimg1],
       bgColor: "bg-[#f1f0ee]",
