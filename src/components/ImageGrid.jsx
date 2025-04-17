@@ -39,7 +39,7 @@ const ImageGrid = () => {
       </div>
 
       {modalImage && (
-        <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-[#0B1215] bg-opacity-80 flex items-center justify-center z-50">
           <button
               onClick={closeModal}
               className="absolute top-2 right-2 text-white text-5xl font-bold z-50"
