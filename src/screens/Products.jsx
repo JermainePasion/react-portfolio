@@ -5,31 +5,58 @@ import Footer from '../components/Footer';
 import frontimg1 from '../assets/imomaine.jpg';
 import frontimg2 from '../assets/imomaine.jpg';
 import frontimg3 from '../assets/imomaine.jpg';
-import frontimg4 from '../assets/imomaine.jpg';
-import frontimg5 from '../assets/imomaine.jpg';
-import frontimg6 from '../assets/imomaine.jpg';
+import charm1 from '../assets/charms/8-bit/clock1.png';
+import charm2 from '../assets/charms/8-bit/heart2.png';
+import charm3 from '../assets/charms/8-bit/key2.png';
+import charm4 from '../assets/charms/8-bit/skeleton1.png';
+import charm5 from '../assets/charms/8-bit/Star1.png';
+
+import csmStickers from '../assets/csm.png'
+import charmFront from '../assets/3dPrint.png';
+import StickersFront from '../assets/StickersFront.png';
+
+import charm6 from '../assets/charms/Nature/leaf1.png';
+import charm7 from '../assets/charms/Nature/moon1.png';
+import charm8 from '../assets/charms/Nature/moon2 1.png';
+import charm9 from '../assets/charms/Nature/Rose1.png';
+import charm10 from '../assets/charms/Nature/wings.png';
+
+import comingSoon from '../assets/ComingSoon.png'
 export default function Products() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const products = [
     {
       title: "CHARMS",
-      cover: frontimg1,
-      images: [frontimg1, frontimg1, frontimg1, frontimg1, frontimg1, frontimg1, frontimg1],
+      cover: charmFront,
+      images: [
+        { src: charm1, link: "https://shopee.ph/Headphone-Charms-8-bit-Set-i.648980465.28983710398" },
+        { src: charm2, link: "https://shopee.ph/Headphone-Charms-8-bit-Set-i.648980465.28983710398" },
+        { src: charm3, link: "https://shopee.ph/Headphone-Charms-8-bit-Set-i.648980465.28983710398" },
+        { src: charm4, link: "https://shopee.ph/Headphone-Charms-8-bit-Set-i.648980465.28983710398" },
+        { src: charm5, link: "https://shopee.ph/Headphone-Charms-8-bit-Set-i.648980465.28983710398" },
+        { src: charm6, link: "https://shopee.ph/Headphone-Charms-Nature-Set-i.648980465.24044099074" },
+        { src: charm7, link: "https://shopee.ph/Headphone-Charms-Nature-Set-i.648980465.24044099074" },
+        { src: charm8, link: "https://shopee.ph/Headphone-Charms-Nature-Set-i.648980465.24044099074" },
+        { src: charm9, link: "https://shopee.ph/Headphone-Charms-Nature-Set-i.648980465.24044099074" },
+        { src: charm10, link: "https://shopee.ph/Headphone-Charms-Nature-Set-i.648980465.24044099074" },
+      ],
       bgColor: "bg-[#f1f0ee]",
-      expandedColor: "bg-[#1d5f80]"
+      expandedColor: "bg-[#1d5f80]",
+      
+      
     },
     {
       title: "STICKERS",
-      cover: frontimg2,
-      images: [frontimg2, frontimg2, frontimg2, frontimg1, frontimg1, frontimg1],
+      cover: StickersFront,
+      images: [{ src: csmStickers, link: "https://shopee.ph/CSM-Chainsaw-Man-Stickers-Set-A-Waterproof-Stickers-Journal-Stickers-i.648980465.12277903545?sp_atk=34d48510-b029-43ee-88e4-aa550a044a01" }],
       bgColor: "bg-[#f1f0ee]",
       expandedColor: "bg-[#1d5f80]"
     },
     {
       title: "HAIR CLIPS",
-      cover: frontimg3,
-      images: [frontimg3, frontimg3, frontimg1, frontimg1, frontimg1, frontimg1],
+      cover: comingSoon,
+      images: [{ src: comingSoon }],
       bgColor: "bg-[#f1f0ee]",
       expandedColor: "bg-[#1d5f80]"
     },
@@ -53,18 +80,25 @@ export default function Products() {
               isOpen ? product.expandedColor : product.bgColor
               }`}>
               {isOpen ? (
-                <div className="w-full overflow-x-auto">
+                <div className="w-full overflow-x-auto flex justify-center">
                   <div className="flex space-x-4 px-4 py-6">
-                    {product.images.map((src, idx) => (
+                    {product.images.map((image, idx) => (
+                      <a
+                      key={idx}
+                      href={image.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block flex-shrink-0"
+                    >
                       <img
-                        key={idx}
-                        src={src}
+                        src={image.src}
                         alt={`Slide ${idx}`}
                         className="w-60 h-60 object-cover rounded shadow flex-shrink-0"
                       />
+                    </a>
                     ))}
                     <button
-                      className="text-red-600 font-bold text-xl ml-4"
+                      className="text-white font-bold text-2xl ml-4"
                       onClick={() => setOpenIndex(null)}
                     >
                       X
