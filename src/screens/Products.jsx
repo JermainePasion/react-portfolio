@@ -11,7 +11,7 @@ import charm3 from '../assets/charms/8-bit/key2.png';
 import charm4 from '../assets/charms/8-bit/skeleton1.png';
 import charm5 from '../assets/charms/8-bit/Star1.png';
 
-import csmStickers from '../assets/csm.png'
+import csmStickers from '../assets/CSMStickers.png'
 import charmFront from '../assets/3dPrint.png';
 import StickersFront from '../assets/StickersFront.png';
 
@@ -49,7 +49,7 @@ export default function Products() {
     {
       title: "STICKERS",
       cover: StickersFront,
-      images: [{ src: csmStickers, link: "https://shopee.ph/CSM-Chainsaw-Man-Stickers-Set-A-Waterproof-Stickers-Journal-Stickers-i.648980465.12277903545?sp_atk=34d48510-b029-43ee-88e4-aa550a044a01" }],
+      images: [{ src: csmStickers, link: "https://shopee.ph/Chainsawman-Anime-%E2%80%A2-Waterproof-Matte-Stickers-%E2%80%A2-1mo6en-i.648980465.56401740578?extraParams=%7B%22display_model_id%22%3A365160970335%7D" }],
       bgColor: "bg-[#f1f0ee]",
       expandedColor: "bg-[#1d5f80]"
     },

@@ -13,3 +13,5 @@ root.render(
     <App />
   </Router>
 );
+
+{/*<Router basename="/react-portfolio">*/}
