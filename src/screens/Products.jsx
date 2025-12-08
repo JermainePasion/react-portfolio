@@ -21,7 +21,13 @@ import charm8 from '../assets/charms/Nature/moon2 1.png';
 import charm9 from '../assets/charms/Nature/Rose1.png';
 import charm10 from '../assets/charms/Nature/wings.png';
 
-import comingSoon from '../assets/ComingSoon.png'
+import emojiClips from '../assets/EmojiClips.jpg'
+import angry from "../assets/hairClips/Angry.jpg"
+import bubble from "../assets/hairClips/Bubble.jpg"
+import star from "../assets/hairClips/Star.jpg"
+import surprised from "../assets/hairClips/Surprised.jpg"
+import worried from "../assets/hairClips/worried.jpg"
+
 export default function Products() {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -55,8 +61,15 @@ export default function Products() {
     },
     {
       title: "HAIR CLIPS",
-      cover: comingSoon,
-      images: [{ src: comingSoon }],
+      cover: emojiClips,
+      images: [
+        { src: angry, link: "https://shopee.ph/product/648980465/41827096306/" },
+        { src: bubble, link: "https://shopee.ph/product/648980465/41827096306/" },
+        { src: surprised, link: "https://shopee.ph/product/648980465/41827096306/" },
+        { src: star, link: "https://shopee.ph/product/648980465/41827096306/" },
+        { src: worried, link: "https://shopee.ph/product/648980465/41827096306/" }
+               
+      ],
       bgColor: "bg-[#f1f0ee]",
       expandedColor: "bg-[#1d5f80]"
     },
