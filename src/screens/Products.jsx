@@ -26,7 +26,7 @@ import angry from "../assets/hairClips/Angry.jpg"
 import bubble from "../assets/hairClips/Bubble.jpg"
 import star from "../assets/hairClips/Star.jpg"
 import surprised from "../assets/hairClips/Surprised.jpg"
-import worried from "../assets/hairClips/worried.jpg"
+import worried from "../assets/hairClips/Worried.jpg"
 
 export default function Products() {
   const [openIndex, setOpenIndex] = useState(null);
