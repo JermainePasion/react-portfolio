@@ -10,11 +10,9 @@ inject();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router basename="/react-portfolio">
+  <Router>
     <HelmetProvider>
       <App />
     </HelmetProvider>
   </Router>
 );
-
-{/*<Router basename="/react-portfolio">*/}
