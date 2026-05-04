@@ -4,13 +4,16 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { inject } from '@vercel/analytics';
 import App from './App';
 import './index.css'
+import { HelmetProvider } from 'react-helmet-async'
 
 inject();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
-    <App />
+  <Router basename="/react-portfolio">
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
   </Router>
 );
 
