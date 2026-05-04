@@ -36,6 +36,7 @@ export default function Home() {
       <Helmet>
         {/* Primary Meta Tags */}
         <title>Squirkle – Fast, Affordable & Quality Services</title>
+        <meta name="google-site-verification" content="olC1_Gb8cLRnmf3Eg5kA-5izEOtjc_RAlUv--shYQog" />
         <meta name="description" content="Squirkle offers fast, affordable, and quality services tailored for students and clients. Communicative every step of the way." />
         <meta name="keywords" content="squirkle, affordable services, fast services, quality, student-friendly" />
         <meta name="author" content="Squirkle" />
