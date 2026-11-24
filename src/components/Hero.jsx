@@ -1,6 +1,6 @@
-import { ArrowRight, BadgeCheck, ShoppingBag, Sparkles } from 'lucide-react';
+import { ArrowRight, BadgeCheck, ShoppingBag } from 'lucide-react';
 import Button from './Button';
-import heroImage from '../assets/Front.png';
+import HeroGallery from './HeroGallery';
 
 const SHOPEE_URL = 'https://shopee.ph/squirkleprintsnthings';
 
@@ -35,20 +35,7 @@ export default function Hero() {
       {/* Image */}
       <div className="relative isolate mx-auto w-full max-w-sm sm:max-w-md">
         <div aria-hidden="true" className="absolute -inset-3 -z-10 rotate-6 rounded-[2.5rem] bg-brand/15 sm:-inset-5" />
-        <img
-          src={heroImage}
-          alt="Custom photo button pins from Squirkle held in a hand"
-          className="w-full -rotate-2 rounded-[2rem] shadow-2xl shadow-brand/25 transition-transform duration-500 hover:rotate-0"
-        />
-        <div className="absolute -bottom-6 left-1/2 flex w-max -translate-x-1/2 items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-lg sm:left-0 sm:-translate-x-6">
-          <span className="grid h-10 w-10 place-items-center rounded-full bg-brand text-white">
-            <Sparkles size={18} />
-          </span>
-          <div className="text-left">
-            <p className="text-sm font-bold text-brand">Student-friendly prices</p>
-            <p className="text-xs text-brand-dark/70">Stickers · Pins · Prints · 3D</p>
-          </div>
-        </div>
+        <HeroGallery />
       </div>
     </section>
   );
