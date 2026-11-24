@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
-import frontimg1 from '../assets/imomaine.jpg';
-import frontimg2 from '../assets/imomaine.jpg';
-import frontimg3 from '../assets/imomaine.jpg';
 import charm1 from '../assets/charms/8-bit/clock1.png';
 import charm2 from '../assets/charms/8-bit/heart2.png';
 import charm3 from '../assets/charms/8-bit/key2.png';
@@ -47,8 +42,8 @@ export default function Products() {
         { src: charm9, link: "https://shopee.ph/Headphone-Charms-Nature-Set-i.648980465.24044099074" },
         { src: charm10, link: "https://shopee.ph/Headphone-Charms-Nature-Set-i.648980465.24044099074" },
       ],
-      bgColor: "bg-[#f1f0ee]",
-      expandedColor: "bg-[#1d5f80]",
+      bgColor: "bg-cream",
+      expandedColor: "bg-brand-dark",
       
       
     },
@@ -56,8 +51,8 @@ export default function Products() {
       title: "STICKERS",
       cover: StickersFront,
       images: [{ src: csmStickers, link: "https://shopee.ph/Chainsawman-Anime-%E2%80%A2-Waterproof-Matte-Stickers-%E2%80%A2-1mo6en-i.648980465.56401740578?extraParams=%7B%22display_model_id%22%3A365160970335%7D" }],
-      bgColor: "bg-[#f1f0ee]",
-      expandedColor: "bg-[#1d5f80]"
+      bgColor: "bg-cream",
+      expandedColor: "bg-brand-dark"
     },
     {
       title: "HAIR CLIPS",
@@ -70,8 +65,8 @@ export default function Products() {
         { src: worried, link: "https://shopee.ph/product/648980465/41827096306/" }
                
       ],
-      bgColor: "bg-[#f1f0ee]",
-      expandedColor: "bg-[#1d5f80]"
+      bgColor: "bg-cream",
+      expandedColor: "bg-brand-dark"
     },
   ];
 
@@ -80,10 +75,8 @@ export default function Products() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-
-      <div className="flex-grow  py-10 px-4 space-y-5">
+    <div>
+      <div className="py-10 px-4 space-y-5">
         {products.map((product, index) => {
           const isOpen = openIndex === index;
           return (
@@ -128,7 +121,7 @@ export default function Products() {
                     alt={product.title}
                     className="w-60 h-60 object-cover rounded shadow-lg mx-auto"
                   />
-                  <p className="mt-2 text-lg font-semibold text-[#1d5f80]">
+                  <p className="mt-2 text-lg font-semibold text-brand-dark">
                     {product.title}
                   </p>
                 </div>
@@ -138,7 +131,6 @@ export default function Products() {
           })}
       </div>
 
-      <Footer />
     </div>
   );
 }

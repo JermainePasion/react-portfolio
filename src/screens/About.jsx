@@ -1,21 +1,18 @@
 import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 import AboutUs from '../assets/AboutUs.png'
 
 export default function About() {
   return (
-    <div className="min-h-screen flex flex-col">
-    <Header />
+    <div>
 
-    <div className="flex-grow flex justify-center px-4 sm:px-6 md:px-8 lg:px-10 py-10">
+    <div className="flex justify-center px-4 sm:px-6 md:px-8 lg:px-10 py-10">
       <div className="w-full max-w-6xl">
-        <div className="flex flex-col md:flex-row items-start justify-between gap-7 bg-[#1d6b89] text-white p-6 sm:p-10 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"> 
+        <div className="flex flex-col md:flex-row items-start justify-between gap-7 bg-brand text-white p-6 sm:p-10 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"> 
           <div className="flex-1 w-full">
             <h1 className=" font-bold uppercase text-2xl sm:text-3xl md:text-4xl text-center mb-4 justify-center">
               Uni students with a dream!
             </h1>
-            <h1 className='text-center font-Fredoka  mt-10 '>
+            <h1 className='text-center font-fredoka  mt-10 '>
               
               WHILE STUDYING, WE QUICKLY REALIZED WE WERE BROKE. SO WE DECIDED TO TAKE MATTERS IN OUR OWN HANDS, AND START A PRINTING BUSINESS!<br></br><br></br>
 
@@ -26,7 +23,7 @@ export default function About() {
               WE ARE DTI AND BIR-REGISTERED BUSINESS AS WELL! 
             </h1>
 
-            <h1 className='text-center font-Fredoka  mt-10 font-bold uppercase text-2xl sm:text-2xl md:text-2xl'>
+            <h1 className='text-center font-fredoka  mt-10 font-bold uppercase text-2xl sm:text-2xl md:text-2xl'>
             
               YAY US!
             </h1>
@@ -35,7 +32,6 @@ export default function About() {
         </div>
       </div>
     </div>
-    <Footer />
   </div>
     
     

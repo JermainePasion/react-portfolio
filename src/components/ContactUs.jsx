@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Button from "./Button";
 
 
 export default function ContactUs() {
@@ -31,7 +32,7 @@ export default function ContactUs() {
         );
     };
     return (
-        <div className='flex justify-center items-center mt-20 rounded-lg shadow-lg mb-50 mx-4'>
+        <div className='flex justify-center items-center rounded-lg shadow-lg mx-4'>
           <section className="bg-white dark:bg-gray-900">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
@@ -74,12 +75,9 @@ export default function ContactUs() {
                     placeholder="Leave us a message!"
                   ></textarea>
                 </div>
-                <button
-                  type="submit"
-                  className="py-3 px-5 text-sm font-medium text-white text-center rounded-lg bg-[#1d6b89] sm:w-fit hover:bg-[#f1f0ee] hover:text-[#1d6b89]  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700"
-                >
+                <Button type="submit" className="w-full sm:w-fit">
                   Send message
-                </button>
+                </Button>
                 {status && (
                     <p className="mt-4 text-green-600 text-center font-medium bg-green-100 py-2 px-4 rounded-lg shadow-md">
                         {status}
