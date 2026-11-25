@@ -22,6 +22,7 @@ import printPhoto2 from '../assets/services/PrintsTwo.jpg';
 import printPhoto3 from '../assets/services/PrintsThree.jpg';
 
 import stickerPrices from '../assets/prices/Stickers.png';
+import labelStickerPrices from '../assets/prices/LabelStickers.jpg';
 import pin125Prices from '../assets/prices/ButtonPin125.png';
 import pin175Prices from '../assets/prices/ButtonPin175.png';
 import pin225Prices from '../assets/prices/ButtonPin225.png';
@@ -48,6 +49,7 @@ const services = [
           photo: dieCutPhoto,
           alt: 'Die-cut stickers with coffee shop and character designs',
           text: 'Cut through the sticker and backing, following the shape of your design.',
+          priceIndex: 0,
         },
         {
           value: 'kiss-cut',
@@ -55,18 +57,23 @@ const services = [
           photo: kissCutPhoto,
           alt: 'Kiss-cut character stickers on their backing sheets',
           text: 'Cut through the sticker only, so it stays on its backing sheet.',
+          priceIndex: 0,
         },
         {
           value: 'labels',
           label: 'Labels',
           photo: labelPhoto,
           alt: 'Round Squirkle logo label stickers',
-          text: 'Simple round labels, great for packaging and branding.',
+          text: 'Paper label stickers in glossy or matte, great for packaging and branding. Available die-cut or kiss-cut.',
+          priceIndex: 1,
         },
       ],
     },
     note: 'Sold per A4 sheet, with a minimum order of 3 sheets.',
-    prices: [{ src: stickerPrices, alt: 'Sticker prices' }],
+    prices: [
+      { src: stickerPrices, alt: 'Sticker prices' },
+      { src: labelStickerPrices, alt: 'Label sticker prices' },
+    ],
   },
   {
     id: 'button-pins',
