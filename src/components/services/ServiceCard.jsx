@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import { ChevronDown, Images, ReceiptText } from 'lucide-react';
 import Button from '../Button';
 import PinSizeCompare from './PinSizeCompare';
+import VariantChips from '../VariantChips';
 
 export default function ServiceCard({ service, onShowPrices }) {
   const { variants, photos = [], options = [] } = service;
@@ -54,26 +55,8 @@ export default function ServiceCard({ service, onShowPrices }) {
 
         {variant ? (
           // Clickable chips: pick a type/size to see its photo
-          <div role="radiogroup" aria-label={variants.label} className="mt-4 flex flex-wrap gap-2">
-            {variants.items.map((item) => {
-              const active = item.value === selected;
-              return (
-                <button
-                  key={item.value}
-                  type="button"
-                  role="radio"
-                  aria-checked={active}
-                  onClick={() => setSelected(item.value)}
-                  className={clsx(
-                    'rounded-full px-3 py-1 text-sm font-semibold transition-colors duration-200',
-                    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40',
-                    active ? 'bg-brand text-white' : 'bg-brand/8 text-brand hover:bg-brand/15'
-                  )}
-                >
-                  {item.label}
-                </button>
-              );
-            })}
+          <div className="mt-4">
+            <VariantChips label={variants.label} items={variants.items} value={selected} onChange={setSelected} />
           </div>
         ) : (
           <ul className="mt-4 flex flex-wrap gap-2" aria-label={`${service.label} options`}>
