@@ -1,8 +1,8 @@
 import { ArrowRight, BadgeCheck, ShoppingBag } from 'lucide-react';
 import Button from './Button';
 import HeroGallery from './HeroGallery';
+import { SHOPEE_URL } from '../constants';
 
-const SHOPEE_URL = 'https://shopee.ph/squirkleprintsnthings';
 
 export default function Hero() {
   return (
